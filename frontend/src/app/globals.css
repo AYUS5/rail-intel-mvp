@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 24% 98%;
+  --foreground: 218 24% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 218 24% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 218 24% 12%;
+  --primary: 190 68% 29%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 38 58% 90%;
+  --secondary-foreground: 30 28% 18%;
+  --muted: 215 20% 92%;
+  --muted-foreground: 215 14% 38%;
+  --accent: 154 38% 86%;
+  --accent-foreground: 160 30% 16%;
+  --destructive: 0 72% 44%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 22% 82%;
+  --input: 214 22% 82%;
+  --ring: 190 68% 29%;
+  --radius: 8px;
+}
+
+* {
+  @apply border-border;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  font-feature-settings: "tnum";
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.metric-grid {
+  grid-template-columns: repeat(auto-fit, minmax(136px, 1fr));
+}
+
